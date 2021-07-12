@@ -1,0 +1,12 @@
+@use './consts' as *;
+
+.BigContainer {
+  min-height: 100vh;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(250px, 1300px) minmax(
+      1rem,
+      1fr
+    );
+  grid-template-rows: repeat(2, min-content);
+}

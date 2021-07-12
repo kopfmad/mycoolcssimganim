@@ -1,0 +1,11 @@
+@use './consts' as *;
+
+.UpperContainer {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid red;
+  min-height: 50px;
+  padding: 3rem;
+}
