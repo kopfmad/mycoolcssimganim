@@ -1,0 +1,51 @@
+@use './consts' as *;
+
+.EfeitoQuatro {
+  width: 300px;
+  height: 300px;
+  margin: $margin-efeitos;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    transition: 0.6s;
+  }
+
+  div {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 1);
+    height: 100px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateY(100px);
+    transition: all 0.6s;
+
+    h3 {
+      color: white;
+      font-size: 2rem;
+      font-family: $f5;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    p {
+      color: white;
+      font-size: 0.8rem;
+      font-family: $f4;
+    }
+  }
+}
+
+.EfeitoQuatro:hover div {
+  transform: translateY(0px);
+}
+
+.EfeitoQuatro:hover img {
+  transform: translateY(-100px);
+  filter: blur(3px);
+}

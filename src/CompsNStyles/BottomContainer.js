@@ -2,6 +2,7 @@ import '../styles.css'
 import EfeitoUm from './EfeitoUm'
 import EfeitoDois from './EfeitoDois'
 import EfeitoTres from './EfeitoTres'
+import EfeitoQuatro from './EfeitoQuatro'
 
 ////////////////////////////////////
 
@@ -11,7 +12,7 @@ export default function BottomContainer() {
       <EfeitoUm></EfeitoUm>
       <EfeitoDois></EfeitoDois>
       <EfeitoTres></EfeitoTres>
-      <EfeitoUm></EfeitoUm>
+      <EfeitoQuatro></EfeitoQuatro>
       <EfeitoUm></EfeitoUm>
       <EfeitoUm></EfeitoUm>
       <EfeitoUm></EfeitoUm>
