@@ -5,32 +5,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  min-height: 50px;
   padding: 3rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .span_my {
   font-family: $f1;
   font-size: calc(1rem + 3vw);
+  color: rgb(4, 112, 112);
 }
 
 .span_cool {
   font-family: $f2;
   font-size: calc(1rem + 3vw);
+  color: rgb(134, 32, 18);
 }
 
 .span_css {
   font-family: $f3;
   font-size: calc(1rem + 3vw);
+  color: rgb(25, 31, 2);
 }
 
 .span_image {
   font-family: $f4;
   font-size: calc(1rem + 3vw);
+  color: rgb(94, 8, 102);
 }
 
 .span_animations {
   font-family: $f5;
   font-size: calc(1rem + 3vw);
+  color: rgb(6, 83, 32);
 }

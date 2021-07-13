@@ -3,7 +3,6 @@
 .EfeitoSete {
   height: 300px;
   width: 300px;
-  background-color: blueviolet;
   position: relative;
   overflow: hidden;
   margin: $margin-efeitos;
@@ -37,6 +36,6 @@
 }
 
 .EfeitoSete:hover img {
-  transition: 100s;
-  filter: hue-rotate(18000deg);
+  transition: 1000s;
+  filter: hue-rotate(180000deg);
 }
