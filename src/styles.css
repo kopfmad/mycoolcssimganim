@@ -431,4 +431,47 @@
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
+
+.EfeitoSete {
+  height: 300px;
+  width: 300px;
+  background-color: blueviolet;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+}
+.EfeitoSete img {
+  max-width: 100%;
+}
+.EfeitoSete__quadradinho {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  text-align: justify;
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  -webkit-transform: scale(0) rotate(720deg);
+          transform: scale(0) rotate(720deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+.EfeitoSete:hover .EfeitoSete__quadradinho {
+  -webkit-transform: scale(1) rotate(0deg);
+          transform: scale(1) rotate(0deg);
+  opacity: 0.5;
+}
+
+.EfeitoSete:hover img {
+  -webkit-transition: 100s;
+  transition: 100s;
+  -webkit-filter: hue-rotate(18000deg);
+          filter: hue-rotate(18000deg);
+}
 /*# sourceMappingURL=styles.css.map */
