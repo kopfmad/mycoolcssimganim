@@ -3,6 +3,9 @@
 .BigContainer {
   min-height: 100vh;
   background: linear-gradient(135deg, #1cb5e0 0%, #021197c5 100%);
+  background-image: url(./imgs/fundo.jpg);
+  background-size: cover;
+  background-origin: bottom;
   display: grid;
   grid-template-columns: minmax(1rem, 1fr) minmax(250px, 1300px) minmax(
       1rem,
