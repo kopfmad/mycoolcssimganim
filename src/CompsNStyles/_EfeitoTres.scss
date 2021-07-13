@@ -1,7 +1,51 @@
-@use './consts';
+@use './consts' as *;
 
 .EfeitoTres {
-  height: 300px;
   width: 300px;
-  background-color: hotpink;
+  height: 300px;
+  margin: $margin-efeitos;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    transition: 0.6s;
+  }
+
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(-100%);
+    transition: all 0.6s;
+
+    h3 {
+      color: white;
+      font-size: 2rem;
+      font-family: $f5;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    p {
+      color: white;
+      font-size: 0.8rem;
+      font-family: $f4;
+    }
+  }
+}
+
+.EfeitoTres:hover div {
+  transform: translateX(0);
+}
+
+.EfeitoTres:hover img {
+  transform: translateX(100%);
 }

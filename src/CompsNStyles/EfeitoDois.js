@@ -4,7 +4,7 @@ import img2 from '../imgs/img2.jpg'
 export default function EfeitoDois() {
   return (
     <div className="EfeitoDois">
-      <img src={img2} alt="imagem 1" />
+      <img src={img2} alt="imagem 3" />
       <div>
         <h3>Caption Title</h3>
         <p>
