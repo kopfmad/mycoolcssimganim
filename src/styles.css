@@ -178,4 +178,10 @@
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+.EfeitoTres {
+  height: 300px;
+  width: 300px;
+  background-color: hotpink;
+}
 /*# sourceMappingURL=styles.css.map */
