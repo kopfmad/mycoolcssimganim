@@ -1,0 +1,56 @@
+@use './consts' as *;
+
+.EfeitoSeis {
+  width: 300px;
+  height: 300px;
+  margin: $margin-efeitos;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  div {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 1);
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.6s;
+    transition-delay: 0.6s;
+    opacity: 0;
+
+    h3 {
+      color: white;
+      font-size: 2rem;
+      font-family: $f5;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    p {
+      color: white;
+      font-size: 0.8rem;
+      font-family: $f4;
+    }
+  }
+}
+
+.EfeitoSeis:hover div {
+  opacity: 1;
+}
+
+.EfeitoSeis:hover img {
+  filter: hue-rotate(540deg);
+  transition: 0.6s;
+}
+
+.EfeitoSeis:hover h3 {
+}
+.EfeitoSeis:hover p {
+}

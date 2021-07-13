@@ -3,6 +3,7 @@ import EfeitoUm from './EfeitoUm'
 import EfeitoDois from './EfeitoDois'
 import EfeitoTres from './EfeitoTres'
 import EfeitoQuatro from './EfeitoQuatro'
+import EfeitoSeis from './EfeitoSeis'
 
 ////////////////////////////////////
 
@@ -14,7 +15,7 @@ export default function BottomContainer() {
       <EfeitoTres></EfeitoTres>
       <EfeitoQuatro></EfeitoQuatro>
       <EfeitoUm></EfeitoUm>
-      <EfeitoUm></EfeitoUm>
+      <EfeitoSeis></EfeitoSeis>
       <EfeitoUm></EfeitoUm>
       <EfeitoUm></EfeitoUm>
       <EfeitoUm></EfeitoUm>
