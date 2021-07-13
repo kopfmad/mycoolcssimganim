@@ -4,5 +4,9 @@
   grid-column: 2/3;
   grid-row: 2/3;
   min-height: 50px;
-  border: 2px solid rebeccapurple;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

@@ -5,7 +5,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 5px solid red;
+
   min-height: 50px;
   padding: 3rem;
+}
+
+.span_my {
+  font-family: $f1;
+  font-size: calc(1rem + 3vw);
+}
+
+.span_cool {
+  font-family: $f2;
+  font-size: calc(1rem + 3vw);
+}
+
+.span_css {
+  font-family: $f3;
+  font-size: calc(1rem + 3vw);
+}
+
+.span_image {
+  font-family: $f4;
+  font-size: calc(1rem + 3vw);
+}
+
+.span_animations {
+  font-family: $f5;
+  font-size: calc(1rem + 3vw);
 }
