@@ -459,6 +459,7 @@
   text-align: justify;
   font-family: "Lobster", cursive;
   font-size: 1.5rem;
+  text-shadow: 1px 1px 1px white;
   -webkit-transform: scale(0) rotate(720deg);
           transform: scale(0) rotate(720deg);
   -webkit-transition: 1s;
@@ -527,5 +528,58 @@
           transition-delay: 0.5s;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.EfeitoNove {
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.EfeitoNove img {
+  max-width: 100%;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.EfeitoNove div {
+  position: absolute;
+  text-align: justify;
+  width: 300%;
+  height: 300%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.418);
+  -webkit-transform: scale(0) rotate(945deg) translate(-50%, -50%);
+          transform: scale(0) rotate(945deg) translate(-50%, -50%);
+}
+.EfeitoNove div p {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  width: 236px;
+}
+
+.EfeitoNove:hover img {
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+}
+
+.EfeitoNove:hover div {
+  opacity: 1;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  -webkit-transform: scale(1) translate(-50%, -50%);
+          transform: scale(1) translate(-50%, -50%);
 }
 /*# sourceMappingURL=styles.css.map */

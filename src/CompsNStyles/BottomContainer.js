@@ -7,6 +7,7 @@ import EfeitoCinco from './EfeitoCinco'
 import EfeitoSeis from './EfeitoSeis'
 import EfeitoSete from './EfeitoSete'
 import EfeitoOito from './EfeitoOito'
+import EfeitoNove from './EfeitoNove'
 
 ////////////////////////////////////
 
@@ -21,7 +22,7 @@ export default function BottomContainer() {
       <EfeitoSeis></EfeitoSeis>
       <EfeitoSete></EfeitoSete>
       <EfeitoOito></EfeitoOito>
-      <EfeitoUm></EfeitoUm>
+      <EfeitoNove></EfeitoNove>
     </div>
   )
 }

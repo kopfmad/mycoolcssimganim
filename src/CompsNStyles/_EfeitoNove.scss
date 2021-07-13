@@ -1,0 +1,53 @@
+@use './consts' as *;
+
+.EfeitoNove {
+  width: 300px;
+  height: 300px;
+  margin: $margin-efeitos;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    max-width: 100%;
+    transform: translateY(-20%);
+    transition: 0.5s;
+  }
+
+  div {
+    position: absolute;
+    text-align: justify;
+    width: 300%;
+    height: 300%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.418);
+    transform: scale(0) rotate(945deg) translate(-50%, -50%);
+
+    p {
+      font-family: $f1;
+      font-size: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+      text-shadow: 2px 2px 2px black;
+      width: 236px;
+    }
+  }
+}
+
+.EfeitoNove:hover img {
+  filter: sepia(100%);
+}
+
+.EfeitoNove:hover div {
+  opacity: 1;
+  transition: 1.5s;
+
+  transform: scale(1) translate(-50%, -50%);
+}
