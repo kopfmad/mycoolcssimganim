@@ -310,7 +310,6 @@
 .EfeitoCinco {
   width: 300px;
   height: 300px;
-  background-color: cadetblue;
   overflow: hidden;
   margin: 1rem;
   position: relative;
@@ -441,7 +440,6 @@
 .EfeitoSete {
   height: 300px;
   width: 300px;
-  background-color: blueviolet;
   position: relative;
   overflow: hidden;
   margin: 1rem;
@@ -479,5 +477,55 @@
   transition: 1000s;
   -webkit-filter: hue-rotate(180000deg);
           filter: hue-rotate(180000deg);
+}
+
+.EfeitoOito {
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.EfeitoOito img {
+  max-width: 100%;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.EfeitoOito div {
+  position: absolute;
+  text-align: justify;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.EfeitoOito div p {
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.EfeitoOito:hover img {
+  -webkit-filter: invert(100);
+          filter: invert(100);
+}
+
+.EfeitoOito:hover div {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=styles.css.map */

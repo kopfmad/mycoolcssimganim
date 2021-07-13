@@ -1,0 +1,47 @@
+@use './consts' as *;
+
+.EfeitoOito {
+  width: 300px;
+  height: 300px;
+  margin: $margin-efeitos;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    max-width: 100%;
+    transform: translateY(-20%);
+    transition: 0.5s;
+  }
+
+  div {
+    position: absolute;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    opacity: 0;
+    transform: scale(0);
+
+    p {
+      font-family: $f2;
+      font-size: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.EfeitoOito:hover img {
+  filter: invert(100);
+}
+
+.EfeitoOito:hover div {
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  transform: scale(1);
+}
